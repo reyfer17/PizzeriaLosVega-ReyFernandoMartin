@@ -892,13 +892,19 @@ color: rgba(68, 67, 68, 0.822);
 
 /* animando el slogan*/
 .slogan {
-    animation-duration: 5s;
+    animation-duration: 8s;
     animation-name: aparece-slogan;
     animation-iteration-count: infinite;
 }
 @keyframes aparece-slogan {
     0% {
-        opacity: 0.7;
+        opacity: 0.1;
+    }
+    10%{
+        opacity: 1;
+    }
+    60%{
+        opacity: 0.8;
     }
     100%{
         opacity: 1;
@@ -922,4 +928,31 @@ color: rgba(68, 67, 68, 0.822);
 }
 .promos img:hover {
     scale: 2;
+}
+
+.banner-titulo {
+    animation-duration: 3s;
+    animation-name: move-titulo;
+    animation-iteration-count: 1;
+}
+@keyframes move-titulo{
+    0%{
+        rotate: 0deg;
+        scale: 0.2;
+    }
+    25%{
+        rotate: 720deg;
+        scale: 1;
+    }
+    50%{
+        rotate: 0deg;
+        scale: 0;
+    }
+    75%{
+        rotate: 180deg;
+        scale: 0.5;
+    }
+    100%{
+        scale: 1;
+    }
 }
