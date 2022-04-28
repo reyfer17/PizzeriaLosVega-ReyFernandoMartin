@@ -905,3 +905,21 @@ color: rgba(68, 67, 68, 0.822);
     }
 
 }
+.promos img{
+    animation-duration: 2s;
+    animation-name: promos-giro;
+    animation-iteration-count: 1;
+}
+@keyframes promos-giro{
+    0%{
+        rotate: 0deg;
+        scale: 0.3;
+    }
+    100%{
+        rotate: 720deg;
+        scale: 1;
+    }
+}
+.promos img:hover {
+    scale: 2;
+}
