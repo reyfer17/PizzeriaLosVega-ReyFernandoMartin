@@ -123,8 +123,7 @@ main {
     margin: 1%;
     border-radius: 2rem;
     background: linear-gradient(red, yellow);
-    overflow-x: hidden;
-    overflow-y: hidden;
+   
     gap: 1rem;   
 }
 .muestreo img{
@@ -152,6 +151,15 @@ main {
     border-radius: 1rem;
   }
 
+/* implementación de animaciones*/
+
+.muestreo li{
+transition: transform 0.3s ease-in-out;
+}  
+.muestreo li:hover {
+    align-self: center;
+    transform: scale(1.8);
+}
 /*implementación grid en section slide*/
 .slide {
     display: grid;
