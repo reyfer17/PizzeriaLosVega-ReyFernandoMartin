@@ -889,3 +889,19 @@ color: rgba(68, 67, 68, 0.822);
 .promos{
     background-image: linear-gradient(to top , yellow, orange, red);
 }
+
+/* animando el slogan*/
+.slogan {
+    animation-duration: 5s;
+    animation-name: aparece-slogan;
+    animation-iteration-count: infinite;
+}
+@keyframes aparece-slogan {
+    0% {
+        opacity: 0.7;
+    }
+    100%{
+        opacity: 1;
+    }
+
+}
