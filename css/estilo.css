@@ -518,8 +518,8 @@ color: rgba(68, 67, 68, 0.822);
     align-items: center;
     position: relative;
     padding: 1%;
-    row-gap: 1%;
-    margin: 1%;
+    font-family: 'Permanent Marker', cursive; 
+    align-self: center;
 }
 .ha-hijo-h2-1{
     grid-area: ha-h2-1;
@@ -541,18 +541,18 @@ color: rgba(68, 67, 68, 0.822);
 
 .ha-hijo-h2-1:hover #ha-h2-1 {
     animation-name: ha-h2-1;
-    animation-duration: 1s;
+    animation-duration: 0.5s;
     animation-iteration-count: 10;
     animation-direction: alternate;
 }
 
 @keyframes ha-h2-1 {
     from {
-        transform: scale(0.5);
+        transform: scale(0.7);
     }
 
     to {
-        transform: scale(1) ;
+        transform: scale(1);
     }
 }
 
@@ -570,7 +570,7 @@ color: rgba(68, 67, 68, 0.822);
 
 @keyframes ha-h2-2 {
     from {
-        transform: scale(0.2);
+        transform: scale(0.7);
     }
 
     to {
