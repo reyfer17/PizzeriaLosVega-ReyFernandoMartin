@@ -7,6 +7,35 @@
     box-sizing: border-box;
 }
 
+/*nuevo agregado desafio bootstrap*/
+.main-lasmas{
+    font-family: 'Permanent Marker', cursive;  
+}
+.titulo-lasmas{
+    text-align: center;
+    text-decoration: underline;
+}
+.card{
+    padding: 10px;
+    border-radius: 2rem;
+}
+.card img{
+    border-radius: 2rem;
+
+}
+.card a{
+    border-radius: 2rem;
+    transition: transform 1s ease;
+    width: 100%;
+}
+.card a:hover{
+    border-radius: 2rem;
+    background-color: yellow;
+    color: red;
+    transform: scale(1.1);
+    
+}
+
 
 .banner {
     position: relative;
