@@ -171,7 +171,6 @@ main {
     margin: 1%;
     border-radius: 2rem;
     background: linear-gradient(red, yellow);
-   
     gap: 1rem;   
 }
 .muestreo img{
@@ -434,17 +433,16 @@ color: rgba(68, 67, 68, 0.822);
 }
 .redes-main {
     display: flex;
-    flex-direction: column;
-    padding: 5%;
-    margin: 0% 3% 1% 3%;
+    /*padding: 5%;*/
+    /*margin: 0% 3% 1% 3%;*/
 }
 
 .redes-main div{
     text-align: center;
     background-color: rgba(253, 253, 253, 0.8);
-    padding: 1%;
-    margin: 2%;
-    border-radius: 3rem;
+    /* padding: 1%;*/
+    /*margin: 2%;*/
+    border-radius: 5rem;
     font-size: 1.5rem;
     font-family: 'Permanent Marker', cursive;
 }
@@ -1009,3 +1007,6 @@ textarea {
     align-items: center;
 }
 
+.redes-main{
+    margin: 2px;
+}
