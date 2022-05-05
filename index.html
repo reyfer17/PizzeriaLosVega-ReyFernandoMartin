@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <html lang="es">
-<div>
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pizzeria Los Vega</title>
-       <!--Links de Bootstrap-->
-       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>     
+    <!--Links de Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>     
     <!--estilos personales-->
     <link rel="stylesheet" href="css/estilo.css" />
     <!--fuentes importadas-->
@@ -20,7 +19,6 @@
         <a href="index.html"> <img class="logo" src="images/pizza-logo.jpg"  alt="logo de Los Vega" ></a>
         <h1 class="banner-titulo">LOS VEGA</h1>
         <h2 class="slogan">la pizza del barrio!</h2>
-        <!--<a href="#sidebar" class="burguer" ><i class="fa fa-bars" aria-hidden="true"></i></a>-->
         <a href="#sidebar" class="burguer" ><span class="material-icons"> reorder </span></a>
         <nav>
             <ul class="navegador" id="sidebar" >
@@ -33,50 +31,49 @@
             </ul>
         </nav>       
     </header>
-    
+    <!--las imágenes e iframes son todas orientativas, no son las definitivas, esto vale para todo el sitio-->
     <main class="main-index">
-<!--section agregado para mostrar el uso de bootstrap--> 
-     <section class="main-lasmas container">
-         <div class="row">
-             <h4 class="titulo-lasmas display-4">Las pizzas más pedidas del mes</h4>
-         </div>
-         <div class="row g-2">
-             <article class="card bg-danger text-warning col-6 col-lg-3"  >
-                 <img class="card-image-top" src="./images/fugazetta.jpg" alt="fugazzeta" >
-                 <div class="card-body">
-                     <h4 class="card-title">Fugazzetta</h4>
-                     <p class="card-text"> El queso entre dos discos de pizza, a modo de relleno, sobre el cual se agrega cebolla.</p>
-                    <a class="btn btn-warning" href="https://api.whatsapp.com/send?phone=+54911444455555&text=Hola, Quiero una fugazzetta!" target="_blank">Quiero una fugazzeta!</a>
+        <!--Seccion agregada para implementar bootstrap, LAS MAS VENDIDAS-->
+        <section class="main-lasmas container">
+            <div class="row">
+                <h4 class="titulo-lasmas display-4">Las pizzas más pedidas del mes</h4>
+            </div>
+            <div class="row g-2">
+                <article class="card bg-danger text-warning col-6 col-lg-3"  >
+                    <img class="card-image-top" src="./images/fugazetta.jpg" alt="fugazzeta" >
+                    <div class="card-body">
+                        <h4 class="card-title">Fugazzetta</h4>
+                        <p class="card-text"> El queso entre dos discos de pizza, a modo de relleno, sobre el cual se agrega cebolla.</p>
+                        <a class="btn btn-warning" href="https://api.whatsapp.com/send?phone=+54911444455555&text=Hola, Quiero una fugazzetta!" target="_blank">Quiero una fugazzeta!</a>
+                    </div>
+                </article>
+                <article class="card bg-warning text-danger col-6 col-lg-3"  >
+                    <img class="card-image" src="./images/doblemuzza.jpg" alt="doblemuzza" >
+                    <div class="card-body">
+                        <h4 class="card-title">Doble Muzza</h4>
+                        <p class="card-text">Salsa de tomate, doble queso mozzarella derretido, orégano y aceitunas. Desbordante de queso.</p>
+                    <a class="btn btn-danger" href="https://api.whatsapp.com/send?phone=+54911444455555&text=Hola, Quiero una doble muzza!" target="_blank">Quiero una doble muzza!</a>
                 </div>
-             </article>
-             <article class="card bg-warning text-danger col-6 col-lg-3"  >
-                <img class="card-image" src="./images/doblemuzza.jpg" alt="doblemuzza" >
-                <div class="card-body">
-                    <h4 class="card-title">Doble Muzza</h4>
-                    <p class="card-text">Salsa de tomate, doble queso mozzarella derretido, orégano y aceitunas. Desbordante de queso.</p>
-                   <a class="btn btn-danger" href="https://api.whatsapp.com/send?phone=+54911444455555&text=Hola, Quiero una doble muzza!" target="_blank">Quiero una doble muzza!</a>
-               </div>
-            </article>
-            <article class=" bg-warning text-danger card col-6 col-lg-3"  >
-                <img class="card-image-top" src="./images/calabresa.jpg" alt="calabresa" >
-                <div class="card-body">
-                    <h4 class="card-title">Calabresa</h4>
-                    <p class="card-text">La calabresa tiene sabor ahumado y suave, al paso que el pepperoni es más fuerte y picante.</p>
-                   <a class="btn btn-danger" href="https://api.whatsapp.com/send?phone=+54911444455555&text=Hola, Quiero una calabresa!" target="_blank">Quiero una calabresa!</a>
-               </div>
-            </article>
-            <article class="bg-danger text-warning card col-6 col-lg-3"  >
-                <img class="card-image-top" src="./images/jamonymorrones.jpeg" alt="fugazzeta" >
-                <div class="card-body">
-                    <h4 class="card-title">Jamon y Morrones</h4>
-                    <p class="card-text">Contiene: muzarrella, salsa de tomate, jamón, morrones y aceitunas.</p>
-                   <a class="btn btn-warning" href="https://api.whatsapp.com/send?phone=+54911444455555&text=Hola, Quiero una de Jamon y Morrones!" target="_blank">Quiero una de jamon y morrones!</a>
-               </div>
-            </article>
-         </div>
-     </section>
-        <!--las imágenes e iframes son todas orientativas, no son las definitivas, esto vale para todo el sitio-->
-        <!--primer section con un pantallazo de los productos, para saber rápidamente de que negocio se trata-->
+                </article>
+                <article class=" bg-warning text-danger card col-6 col-lg-3"  >
+                    <img class="card-image-top" src="./images/calabresa.jpg" alt="calabresa" >
+                    <div class="card-body">
+                        <h4 class="card-title">Calabresa</h4>
+                        <p class="card-text">La calabresa tiene sabor ahumado y suave, al paso que el pepperoni es más fuerte y picante.</p>
+                    <a class="btn btn-danger" href="https://api.whatsapp.com/send?phone=+54911444455555&text=Hola, Quiero una calabresa!" target="_blank">Quiero una calabresa!</a>
+                </div>
+                </article>
+                <article class="bg-danger text-warning card col-6 col-lg-3"  >
+                    <img class="card-image-top" src="./images/jamonymorrones.jpeg" alt="fugazzeta" >
+                    <div class="card-body">
+                        <h4 class="card-title">Jamon y Morrones</h4>
+                        <p class="card-text">Contiene: muzarrella, salsa de tomate, jamón, morrones y aceitunas.</p>
+                    <a class="btn btn-warning" href="https://api.whatsapp.com/send?phone=+54911444455555&text=Hola, Quiero una de Jamon y Morrones!" target="_blank">Quiero una de jamon y morrones!</a>
+                </div>
+                </article>
+            </div>
+        </section>
+        <!--section MUESTREO - un pantallazo de los productos, para saber rápidamente de que negocio se trata y acceder a PRODUCTOS-->
         <section  >
             <ul class="muestreo">
                 <li class="li-pizzas"><a href="pages/productos.html#precios-pizzas"> <p> PIZZAS</p><img src="images/imagen1-pizza-main.jpg" alt="imagen pizza"></a> </li>
@@ -85,14 +82,15 @@
             </ul>
         </section>
 
-        <!--este segundo section tiene la intención de ser el nexo más importante a la página de los productos, ya que se visualizan los precios de las promociones, si el cliente no hace click en el vínculo de todas formas ya vería un precio por pantalla-->
+        <!--este section tiene la intención de ser el nexo más importante a la página PRODUCTOS, se visualizarían los precios de las promociones en modo carrusel, si el cliente no hace click en el vínculo de todas formas ya vería un precio por pantalla-->
+        <!--a desarrollar el slide para la próxima entrega del proyecto final usando bootstrap-->
         <section class="slide">
             <h2> <a href="pages/productos.html#promos">NUESTRAS PROMOS</a> </h2>
             <img src="images/promo-main.png" alt="imagen promos"> <!--acá iría un slide de imágenes con las PROMO, que lo agregaría cuando lo veammos en clase, por ahora dejo una imagen nada más en su lugar>-->
             <p> <a href="pages/productos.html">***Lista de Precios***</a> </p>
         </section>
 
-        <!--en el tercer section visualizamos todo lo referente a ubicación, para que el cliente tenga una referencia rápida de donde está ubicado el local y como llegar-->
+        <!--en este section visualizamos todo lo referente a ubicación, para que el cliente tenga una referencia rápida de donde está ubicado el local y como llegar-->
         <section class="local">
             <div class="ubicacion">
                 <p>Ubicación:</p>
@@ -108,29 +106,25 @@
                 </dl>
                 <img src="images/pizzeria-local-main.jpg" alt="imagen del local por fuera" width="500">
             </div>
-
         </section>
     </main>
 
-    <footer id="footer" class="footer">   
+    <footer id="footer" class="footer"> 
+        <!--mediante el vínculo con el logo regresamos a la página principal desde cualquier página-->  
         <div class="cuadro-footer" id="footer-cf1" >
             <a href="index.html"> <img class="logo" src="images/pizza-logo.jpg"  alt="logo de Los Vega"></a> 
             <p>Los Vega 2022 todos los derechos reservados</p>
         </div>
-
         <div class="cuadro-footer" id="footer-cf2" >
             <p id="p-cf2"> Hacé tu pedido al +54 11-4444-5555 </p>
             <a href="https://api.whatsapp.com/send?phone=+54911444455555&text=Hola, Necesito lista de precios!" target="_blank">
             <img id="img-cf2" src="images/NicePng_wapp2.png" alt="link a whatsapp"  ></a>     
         </div>
-
         <div class="cuadro-footer" id="footer-cf3">   
             <p> Seguinos:</p>
             <a id="cf-insta" href="https://www.instagram.com/losvega_pizzeria/?hl=es" target="_blank"><img src="images/NicePng_insta.png" alt="link de instagram" > </a> 
-            <!--me quedó el logo de facebook con una tranparencia por la imagen que descargué, para la próxima lo modifico o el de instagram para que queden iguales-->
             <a id="cf-face" href="https://m.facebook.com/pg/Los-Vega-120534359744132/posts/" target="_blank"><img src="images/NicePng_face.png" alt="link a facebook" ></a>   
          </div>
     </footer>
 </body>
-</div>
 </html>
