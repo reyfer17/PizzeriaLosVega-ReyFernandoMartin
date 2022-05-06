@@ -33,53 +33,32 @@
     </header>
     <!--las imágenes e iframes son todas orientativas, no son las definitivas, esto vale para todo el sitio-->
     <main class="main-index">
-        <!--Seccion agregada para implementar bootstrap, LAS MAS VENDIDAS-->
-        <section class="main-lasmas container">
-            <div class="row">
-                <h4 class="titulo-lasmas display-4">Las pizzas más pedidas del mes</h4>
-            </div>
-            <div class="row g-2">
-                <article class="card bg-danger text-warning col-6 col-lg-3"  >
-                    <img class="card-image-top" src="./images/fugazetta.jpg" alt="fugazzeta" >
-                    <div class="card-body">
-                        <h4 class="card-title">Fugazzetta</h4>
-                        <p class="card-text"> El queso entre dos discos de pizza, a modo de relleno, sobre el cual se agrega cebolla.</p>
-                        <a class="btn btn-warning" href="https://api.whatsapp.com/send?phone=+54911444455555&text=Hola, Quiero una fugazzetta!" target="_blank">Quiero una fugazzeta!</a>
-                    </div>
-                </article>
-                <article class="card bg-warning text-danger col-6 col-lg-3"  >
-                    <img class="card-image" src="./images/doblemuzza.jpg" alt="doblemuzza" >
-                    <div class="card-body">
-                        <h4 class="card-title">Doble Muzza</h4>
-                        <p class="card-text">Salsa de tomate, doble queso mozzarella derretido, orégano y aceitunas. Desbordante de queso.</p>
-                    <a class="btn btn-danger" href="https://api.whatsapp.com/send?phone=+54911444455555&text=Hola, Quiero una doble muzza!" target="_blank">Quiero una doble muzza!</a>
-                </div>
-                </article>
-                <article class=" bg-warning text-danger card col-6 col-lg-3"  >
-                    <img class="card-image-top" src="./images/calabresa.jpg" alt="calabresa" >
-                    <div class="card-body">
-                        <h4 class="card-title">Calabresa</h4>
-                        <p class="card-text">La calabresa tiene sabor ahumado y suave, al paso que el pepperoni es más fuerte y picante.</p>
-                    <a class="btn btn-danger" href="https://api.whatsapp.com/send?phone=+54911444455555&text=Hola, Quiero una calabresa!" target="_blank">Quiero una calabresa!</a>
-                </div>
-                </article>
-                <article class="bg-danger text-warning card col-6 col-lg-3"  >
-                    <img class="card-image-top" src="./images/jamonymorrones.jpeg" alt="fugazzeta" >
-                    <div class="card-body">
-                        <h4 class="card-title">Jamon y Morrones</h4>
-                        <p class="card-text">Contiene: muzarrella, salsa de tomate, jamón, morrones y aceitunas.</p>
-                    <a class="btn btn-warning" href="https://api.whatsapp.com/send?phone=+54911444455555&text=Hola, Quiero una de Jamon y Morrones!" target="_blank">Quiero una de jamon y morrones!</a>
-                </div>
-                </article>
-            </div>
-        </section>
+       
         <!--section MUESTREO - un pantallazo de los productos, para saber rápidamente de que negocio se trata y acceder a PRODUCTOS-->
-        <section  >
-            <ul class="muestreo">
-                <li class="li-pizzas"><a href="pages/productos.html#precios-pizzas"> <p> PIZZAS</p><img src="images/imagen1-pizza-main.jpg" alt="imagen pizza"></a> </li>
-                <li class="li-empanadas"><a href="pages/productos.html#precios-empanadas"> <p> EMPANADAS Y MAS</p><img src="images/imagen2-empanadas-main.jpg" alt="imagen empanadas y mas"></a> </li>
-                <li class="li-bebidas"><a href="pages/productos.html#precios-postres"> <p> BEBIDAS Y POSTRES</p><img src="images/imagen3-bebidas-main.jpeg" alt="imagen bebidas y postre" ></a> </li>
-            </ul>
+        <section class="container " >
+            <div class="muestreo row p-3">
+                <div class="li-empanadas card card-image-bottom col-12 col-md-3">
+                    <a class="card-body" href="pages/productos.html#empanadas"> 
+                        <p class="card-title"> EMPANADAS Y MAS</p>
+                    </a> 
+                    <img class="card-image" src="images/imagen2-empanadas-main.jpg" alt="imagen empanadas y mas">
+                    
+                </div>
+                <div class="li-pizzas card card-image-bottom col-12 col-md-3">
+                    <a class="card-body" href="pages/productos.html#pizzas">
+                         <p class="card-title"> PIZZAS</p>
+                    </a>
+                    <img class="card-image" src="images/imagen1-pizza-main.jpg" alt="imagen pizza">
+                    
+                </div>
+                <div class="li-bebidas card card-image-bottom col-12 col-md-3">
+                    <a class="card-body" href="./pages/productos.html#postres"> 
+                        <p class="card-title"> BEBIDAS Y POSTRES</p>
+                    </a> 
+                    <img class="card-image" src="images/imagen3-bebidas-main.jpeg" alt="imagen bebidas y postre" >
+                   
+                </div>
+            </div>
         </section>
 
         <!--este section tiene la intención de ser el nexo más importante a la página PRODUCTOS, se visualizarían los precios de las promociones en modo carrusel, si el cliente no hace click en el vínculo de todas formas ya vería un precio por pantalla-->
@@ -105,6 +84,46 @@
                     <dd class="aclaracion">(a una cuadra de la cancha de Banfield)</dd>
                 </dl>
                 <img src="images/pizzeria-local-main.jpg" alt="imagen del local por fuera" width="500">
+            </div>
+        </section>
+         <!--Seccion agregada para implementar bootstrap, LAS MAS VENDIDAS-->
+         <section class="main-lasmas container">
+            <div class="row">
+                <h4 class="titulo-lasmas display-4">Las pizzas más pedidas del mes</h4>
+            </div>
+            <div class="row">
+                <article class="card bg-danger text-warning col-12 col-sm-6 col-lg-3"  >
+                    <img class="card-image-top" src="./images/fugazetta.jpg" alt="fugazzeta" >
+                    <div class="card-body">
+                        <h4 class="card-title">Fugazzetta</h4>
+                        <p class="card-text"> El queso entre dos discos de pizza, a modo de relleno, sobre el cual se agrega cebolla.</p>
+                        <a class="btn btn-warning" href="https://api.whatsapp.com/send?phone=+54911444455555&text=Hola, Quiero una fugazzetta!" target="_blank">Quiero una fugazzeta!</a>
+                    </div>
+                </article>
+                <article class="card bg-warning text-danger col-12 col-sm-6 col-lg-3"  >
+                    <img class="card-image" src="./images/doblemuzza.jpg" alt="doblemuzza" >
+                    <div class="card-body">
+                        <h4 class="card-title">Doble Muzza</h4>
+                        <p class="card-text">Salsa de tomate, doble queso mozzarella derretido, orégano y aceitunas. Desbordante de queso.</p>
+                    <a class="btn btn-danger" href="https://api.whatsapp.com/send?phone=+54911444455555&text=Hola, Quiero una doble muzza!" target="_blank">Quiero una doble muzza!</a>
+                </div>
+                </article>
+                <article class="bg-warning text-danger card col-12 col-sm-6 col-lg-3"  >
+                    <img class="card-image-top" src="./images/calabresa.jpg" alt="calabresa" >
+                    <div class="card-body">
+                        <h4 class="card-title">Calabresa</h4>
+                        <p class="card-text">La calabresa tiene sabor ahumado y suave, al paso que el pepperoni es más fuerte y picante.</p>
+                    <a class="btn btn-danger" href="https://api.whatsapp.com/send?phone=+54911444455555&text=Hola, Quiero una calabresa!" target="_blank">Quiero una calabresa!</a>
+                </div>
+                </article>
+                <article class="bg-danger text-warning card col-12 col-sm-6 col-lg-3"  >
+                    <img class="card-image-top" src="./images/jamonymorrones.jpeg" alt="fugazzeta" >
+                    <div class="card-body">
+                        <h4 class="card-title">Jamon y Morrones</h4>
+                        <p class="card-text">Contiene: muzarrella, salsa de tomate, jamón, morrones y aceitunas.</p>
+                    <a class="btn btn-warning" href="https://api.whatsapp.com/send?phone=+54911444455555&text=Hola, Quiero una de Jamon y Morrones!" target="_blank">Quiero una de jamon y morrones!</a>
+                </div>
+                </article>
             </div>
         </section>
     </main>

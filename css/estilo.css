@@ -125,15 +125,14 @@ main {
 }
 .card img{
     border-radius: 2rem;
-
 }
-.card a{
+.main-lasmas div .card a{
     border-radius: 2rem;
     transition: transform 1s ease;
     width: 100%;
 }
     /*EFECTOS LINKS en las mas pedidas*/
-    .card a:hover{
+    .main-lasmas div .card a:hover{
         border-radius: 2rem;
         background-color: yellow;
         color: red;
@@ -143,50 +142,59 @@ main {
 /* seccion muestreo -Index*/
 .muestreo {
     font-size: larger;
-    height: 270px;
-    list-style-type: none;
-    display: flex;
     text-align: center;
-    flex-flow: row nowrap ;
     justify-content: space-around;
     border: solid;
-    padding: 1%;
-    margin: 1%;
     border-radius: 2rem;
-    background: linear-gradient(red, yellow);
-    gap: 1rem;   
+    background: linear-gradient(red,orange, yellow); 
+    column-gap: 3%;
 }
-.muestreo img{
+.muestreo .card{
     border: solid;
-    border-radius: 2rem;
-    max-width: 350px;
-    max-height: 200px;
-    width: 100%;
+    border-radius: 3rem;
+    margin-bottom: 2%;
 }
     /*EFECTOS LINKS muestreo*/
-    .muestreo a p:link {
-        color: crimson;
+    .muestreo .card:link {
+        color: red;
     }
-    .muestreo a p:visited {
-        color: rgba(17, 17, 17, 0.822);
+    .muestreo .card-title:visited {
+        color: rgba(130, 48, 120, 0.822);
     }
-    .muestreo a p:hover {
+    .muestreo .card:hover {
         border-bottom: 0.1rem solid;
         background: yellow;
-        border-radius: 1rem;
-        }
-    .muestreo a p:active {
-        background: red;
-        color: yellow;
-        border-radius: 1rem;
+        color: red;
+        border-radius: 3rem;
+        font-style: italic;
     }
-    .muestreo li{
-    transition: transform 0.3s ease-in-out;
+    .muestreo .card:active {
+        background: rgb(253, 244, 244);
+        color: black;
+        border-radius: 3rem;
+    }
+    .muestreo .card-image{
+        border: solid;
+        width: 100%;
+    }
+    .muestreo .card-title{
+        transition: transform 0.3s ease-in-out;
     }  
-    .muestreo li:hover {
-        align-self: center;
-        transform: scale(1.8);
+    .li-empanadas{
+        background-color: red;
     }
+    .li-pizzas{
+        background-color: orange;
+    }
+    .li-bebidas{
+        background-color: red;
+    }
+  
+    .muestreo .card-title:hover {
+        color: red;
+        align-self: center;
+        transform: scale(1.5);
+    }   
 
 /*-seccion slide - Index */
 .slide {
@@ -656,20 +664,6 @@ textarea {
         width: 100%;
     }
 
-    /*seccion muestreo - Index - hasta 600px*/
-    .muestreo{
-        font-size: large ;
-        width: 97%;
-        padding: 3% ;
-    }
-    .muestreo img{
-        width: 100%;
-        height: 75%;
-        }
-    .li-pizzas img{
-        position: relative;
-        top: 28px;
-    }    
 }
 
 @media screen and (min-width: 601px) {
@@ -774,16 +768,6 @@ textarea {
     }
 }
  
-@media screen and (max-width: 698px)  {
-    .li-pizzas img{
-        position: relative;
-        top: 28px;
-    }    
-    .muestreo {
-        height: 250px;
-    }
-}
-
 @media screen and (max-width: 430px)  {
     #sidebar:target{
     transform: translateX(-5%);
@@ -813,25 +797,7 @@ textarea {
 
 }
 /*ajustes para vistas muy pequeñas*/
-@media screen and (max-width: 360px)  {
-    .muestreo img{
-        width: 100%;
-        height: 40%;
-        }
 
-    .li-pizzas img{
-        position: relative;
-        top: 50px;
-        }
-    .li-empanadas img{
-        position: relative;
-        top: 28px;
-        }
-    .li-bebidas img{
-        position: relative;
-        top: 4px;
-        }
-}
 
 @media screen and (max-width: 330px)  {
     #footer-cf1 a{

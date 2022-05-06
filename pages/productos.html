@@ -34,14 +34,14 @@
     </header>
 
     <main>
-    <!--aplicado de bootstrap en tabla nueva-->    
+    <!--aplicado de bootstrap en tabla nueva - mostraría precios con rebajas individuales en base a las más vendidas cada mes-->    
         <section class="promos-mensuales" id="tabla">
             <h3 class="titulo-promos-mensuales text-danger bg-warning">Promos individuales x este mes!</h3>
             <table class="table table-hover table-warning">
                 <thead>
                     <tr>
                         <th>Producto</th>
-                        <th>Precio</th>
+                        <th>Precio promocional</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -64,6 +64,7 @@
                 </tbody>
             </table>
         </section>
+        <!--la seccion promos entraría luego en más detalle cuando agregue un desplegable, por ahora está simplificada para que simplifique las distintas opciones-->
         <section class="promos">
             <a name="promos"></a><h3 class="promo-titulo">PROMOS</h3>
             <ol class="promo-lista">
@@ -72,11 +73,12 @@
                 <li><img src="../images/promo3-productos.png" alt="precio promo3"></li>
             </ol>
         </section>
-        <section class="pizzas">
+        <!--todas las secciones a continuación son practicamente simlares a fines prácticos-->
+        <section id="pizzas" class="pizzas">
             <a name="precios-pizzas"></a><h3 class="pizzas-titulo" >PIZZAS</h3>
             <img src="../images/precios-pizza-productos.jpg" alt="precios pizzas">
         </section>
-        <section class="empanadas">
+        <section id="empanadas" class="empanadas">
             <a name="precios-empanadas"></a><h3 class="empanadas-titulo" >EMPANADAS</h3>
             <img src="../images/precios-empanadas-productos.jpg" alt="precio empanadas">
         </section>
@@ -84,7 +86,7 @@
             <a name="precios-otros"></a><h3 class="minutas-titulo" >MINUTAS Y OTROS</h3>
             <img src="../images/precios-minutas-productos.png" alt="precio minutas y otros">
         </section>
-        <section class="postres">
+        <section id="postres" class="postres">
             <a name="precios-postres"></a><h3 class="postres-titulo" >POSTRES</h3>
             <img src="../images/precios-postres-productos.jpg" alt="precio postres">
         </section>
@@ -93,6 +95,7 @@
             <img src="../images/precios-bebidas-productos.jpg" alt="">
         </section>
         <br>
+        <!--botón de regreso a la parte superior-->
         <a href="#tabla" > <p class="volver-arriba">volver arriba</p> </a>
     </main>
 
