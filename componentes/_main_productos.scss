@@ -1,0 +1,145 @@
+/*estilos pag.PRODUCTOS*/
+.titulo-promos-mensuales{
+    text-align: center;  
+    border-radius: 2rem; 
+}
+.promos{
+    display: flex;
+    flex-direction: column;
+    margin: 0% 2% 0% 2%;
+    padding: 1%;
+    font-size: 4rem;
+    text-align: center;
+    border: double red;
+    border-radius: 2rem;
+    background-image: linear-gradient(to top , yellow, orange, red);
+}
+.promo-lista {
+    list-style: none;
+ }
+.promo-lista li {
+    display: inline;
+ }
+.promo-lista li img{
+     width: 30%;
+ }
+.pizzas{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 2%;
+    padding: 1%;
+    font-size: 3rem;
+    text-align: center;
+    align-items: center;
+    }
+.pizzas img{
+    border-radius: 5rem;
+    border: solid;
+    width: 95%;
+}    
+.empanadas{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 2%;
+    padding: 1%;
+    font-size: 3rem;
+    text-align: center;
+    align-items: center;
+        }
+.empanadas img{
+    border-radius: 5rem;
+    border: solid;
+    width: 75%;
+}
+.minutas{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 2%;
+    padding: 1%;
+    font-size: 3rem;
+    text-align: center;
+    align-items: center;
+    }   
+.minutas img{
+    border-radius: 5rem;
+    border: solid;
+    width: 65%;
+}    
+.postres{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 2%;
+    padding: 1%;
+    font-size: 3rem;
+    text-align: center;
+    align-items: center;
+}
+.postres img{
+    border-radius: 5rem;
+    border: solid;
+    width: 75%;
+}    
+.bebidas{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 2%;
+    padding: 1%;
+    font-size: 3rem;
+    text-align: center;
+    align-items: center;
+}
+.bebidas img{
+    border-radius: 5rem;
+    border: solid;
+    width: 75%;
+}    
+.volver-arriba  {
+    margin: 2%;
+    text-align: center;
+    font-size: 1.7rem;
+    background-color: rgba(250, 1, 1, 0.6);
+}         
+@media screen and (max-width: 430px){
+    .promos{
+        font-size: 2rem;
+    }
+    .pizzas{
+        font-size: 2rem;
+    }
+    .empanadas{
+        font-size: 2rem;
+    }
+    .minutas{
+        font-size: 2rem;
+    }
+    .bebidas{
+        font-size: 2rem;
+    }
+    .postres{
+        font-size: 2rem;
+    }
+}
+/* animando promos en PRODUCTOS*/
+.promos img{
+    animation-duration: 2s;
+    animation-name: promos-giro;
+    animation-iteration-count: 1;
+}
+@keyframes promos-giro{
+    0%{
+        rotate: 0deg;
+        scale: 0.3;
+    }
+    100%{
+        rotate: 720deg;
+        scale: 1;
+    }
+}
+.promos img:hover {
+    scale: 2;
+}

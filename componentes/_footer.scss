@@ -1,0 +1,122 @@
+/*estilo footer general*/
+.footer {
+    background-image: linear-gradient(45deg , yellow, orange, red);
+}
+@media screen and (max-width: 600px) {
+    /*footer hasta 600px*/
+    #footer{
+        background-color: orange;
+        border-radius: 3rem;
+        margin: 10px;
+        display: grid;
+        height: 850px;
+        width: 97%;
+        padding: 3%;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: 
+            "cf2"
+            "cf3"
+            "cf1"
+            ;
+    }
+    .cuadro-footer {
+        display: flex;    
+        padding: 3%;
+        font-family: 'Permanent Marker', cursive;
+        font-size: 1.5rem;
+        flex-flow: column wrap;
+        text-align: center;
+    }
+    .footer .logo {   
+         padding: 3px;
+         border-radius: 5rem;
+         border-style: double;   
+         }
+    .footer .cuadro-footer img {
+        padding: 5%;
+        width: 60%;
+        max-width: 150px;
+    }     
+    #footer-cf1{
+        grid-area: cf1;
+    }
+    #footer-cf1 p{
+        position: relative;
+        bottom: 250px;
+    }
+    #footer-cf1 a{
+        position: relative;
+        bottom: 20px;
+    }
+    #footer-cf2{
+        grid-area: cf2;
+    }
+    #cf-face{
+        position: relative;
+        bottom: 120px;
+        right: 60px;
+    }
+    #cf-insta{
+        position: relative;
+        top: 38px;
+        left: 60px;
+    }
+    #footer-cf3{
+        grid-area: cf3;
+    }
+    .cuadro-footer a{
+        text-align: center;
+        width: 100%;
+    }
+
+}
+
+@media screen and (min-width: 601px){
+    /*estilo footer mayor a 600px*/
+    footer{
+        height: 200px;
+    }
+    .footer{
+        display: flex;
+        justify-content: space-around;
+        margin: 1px;
+        border-radius: 1rem;
+    }
+    .footer .cuadro-footer {
+        display: flex;    
+        padding: 3%;
+        width: 100%;
+        align-items: center;
+        font-family: 'Permanent Marker', cursive;
+        flex-flow: row nowrap;
+        overflow-x: visible;
+        overflow-y: visible;
+    }
+    .footer .cuadro-footer img {
+        padding: 5%;
+        width: 150%;
+        max-width: 100px;
+        min-width: 30px;
+    }
+    .footer .cuadro-footer p {
+        padding: 5%;
+        margin: 3%;
+    }
+    .footer .logo {   
+        position: relative;
+        top: 0;
+        left: 0;
+        margin-right: 5rem;
+        padding: 3rem;
+        border-radius: 3rem;
+        border-style: double;   
+    
+    }
+}
+@media screen and (max-width: 330px){
+    #footer-cf1 a{
+        position: relative;
+        top: 50px;
+    }
+}
