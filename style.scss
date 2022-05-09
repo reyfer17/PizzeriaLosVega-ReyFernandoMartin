@@ -1,0 +1,903 @@
+/*codigo de css de mi sitio - Pizzeria Los Vega*/
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+/*reseteo*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/*estilo del header*/
+.banner {
+    position: relative;
+    background-image: url(../images/banner-pizza.jpg) ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: top ; 
+    border-bottom: solid;
+}
+.banner-titulo{
+    text-align: center;
+    font-family: 'Permanent Marker', cursive;  
+    color: red;
+    font-size: 5rem;
+    
+}
+.slogan { 
+    color: rgba(250, 1, 1, 0.95);
+    background-color: rgba(250, 246, 1, 0.8);
+    font-size: 3rem;
+    font-family: 'Permanent Marker', cursive;   
+}
+.navegador {  
+    display: flex;
+    color: rgba(3, 80, 61, 0.781);
+    padding: 1rem;
+    justify-content: flex-end;
+    flex-flow: row nowrap;
+    gap: 3rem 1.3rem; 
+}
+.navegador li {
+    list-style: none;
+    font-family: 'Permanent Marker', cursive;
+    border: solid;
+    border-radius: 1rem;
+    font-size: small;
+    background-color: rgba(250, 246, 1, 0.904);
+}
+    /*EFECTOS LINKS navegador*/
+    .navegador a:link {
+        color: black;
+    }
+    .navegador a:visited {
+        color: rgba(17, 17, 17, 0.822);
+    }
+    .navegador a:hover {
+        border-bottom: 0.1rem solid;
+        background: yellow;
+        border-radius: 1rem;
+        }
+    .navegador a:active {
+        background: red;
+        color: yellow;
+        border-radius: 1rem;
+    }
+.banner .logo {      
+   position: relative;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    border-radius: 3rem;
+    border-style: double;  
+    width: 100px;  
+}
+.material-icons{
+    font-family: 'Material Icons';
+    font-weight: bold;
+    font-style: normal;
+    font-size: 42px;
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+    border: solid;
+    background-color: yellow;
+    border-radius: 1rem;
+}
+.cerrar-menu{
+    font-size: 1.1rem;
+    background-color: red;
+    border-radius: 1rem;
+}
+
+/*estilo del main de todas las páginas*/
+main {
+    background-image: url(../images/fondo-productos.jpg);
+    font-family: 'Permanent Marker', cursive; 
+}
+
+/*estilo footer general*/
+.footer {
+    background-image: linear-gradient(45deg , yellow, orange, red);
+}
+
+/*estilo main en Index*/
+    /*seccion las mas pedidas - Index*/
+.titulo-lasmas{
+    text-align: center;
+    text-decoration: underline;
+}
+.card{
+    padding: 10px;
+    border-radius: 2rem;
+}
+.card img{
+    border-radius: 2rem;
+}
+.main-lasmas div .card a{
+    border-radius: 2rem;
+    transition: transform 1s ease;
+    width: 100%;
+}
+    /*EFECTOS LINKS en las mas pedidas*/
+    .main-lasmas div .card a:hover{
+        border-radius: 2rem;
+        background-color: yellow;
+        color: red;
+        transform: scale(1.1);  
+    }
+
+/* seccion muestreo -Index*/
+.muestreo {
+    font-size: larger;
+    text-align: center;
+    justify-content: space-around;
+    border: solid;
+    border-radius: 2rem;
+    background: linear-gradient(red,orange, yellow); 
+    column-gap: 3%;
+}
+.muestreo .card{
+    border: solid;
+    border-radius: 3rem;
+    margin-bottom: 2%;
+}
+    /*EFECTOS LINKS muestreo*/
+    .muestreo .card:link {
+        color: red;
+    }
+    .muestreo .card-title:visited {
+        color: rgba(130, 48, 120, 0.822);
+    }
+    .muestreo .card:hover {
+        border-bottom: 0.1rem solid;
+        background: yellow;
+        color: red;
+        border-radius: 3rem;
+        font-style: italic;
+    }
+    .muestreo .card:active {
+        background: rgb(253, 244, 244);
+        color: black;
+        border-radius: 3rem;
+    }
+    .muestreo .card-image{
+        border: solid;
+        width: 100%;
+    }
+    .muestreo .card-title{
+        transition: transform 0.3s ease-in-out;
+    }  
+    .li-empanadas{
+        background-color: red;
+    }
+    .li-pizzas{
+        background-color: orange;
+    }
+    .li-bebidas{
+        background-color: red;
+    }
+  
+    .muestreo .card-title:hover {
+        color: red;
+        align-self: center;
+        transform: scale(1.5);
+    }   
+
+/*-seccion slide - Index */
+.slide {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 10% 80% 10%;
+    grid-template-areas: 
+        "slidetit"
+        "slideslide"
+        "slidelistap"
+        ;
+    font-size: 1rem;
+    text-align: center;
+    width: 100%;
+    padding: 1rem 0rem 1rem 0rem;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+.slide h2{
+    width: 100%;
+    grid-area: slidetit;
+}
+.slide img{
+    grid-area: slideslide;
+    border-radius: 10%;
+    image-rendering: optimizeQuality;
+    padding: 0 2% 0 2%;
+    width: 100%;
+}
+.slide p{
+    grid-area: slidelistap;
+    background-color: rgba(202, 12, 12,0.8);
+    border-radius: rem;
+    width: 100%;
+}
+    /*EFECTOS LINK slide - Index*/
+    .slide a:link{
+        color: black;
+    }
+    .slide a:visited {
+    color: rgba(68, 67, 68, 0.822);
+    }
+    .slide a:hover {
+        border-bottom: 0.2rem double;
+        background: yellow;
+        border-radius: 1rem;
+    }
+    .slide a:active {
+            background: red;
+            color: yellow;
+            border-radius: 1rem;
+    }
+    
+/*seccion local - Index*/    
+.local   {
+    display: flex;
+    justify-content: space-between;
+    background-color: red;
+    margin: 2% ;
+    border-radius: 7% ;
+    flex-flow: row nowrap;
+    width: 97%;
+    padding: 3%;
+    border-radius: 5rem;
+}
+.local div {
+    width: 47%;
+    text-align: center;
+    color: red;
+    font-size: 1.3rem;
+    border: solid;
+    border-radius: 2rem;
+    overflow-x: visible;
+    overflow-y: hidden;
+     padding: 2%;
+     background-color: yellow;
+}
+.local .ubicacion{
+    width: 100%;
+    height: 1fr;
+    border-radius: 5rem;
+}    
+.local .direccion {
+    width: 100%;
+    height: 1fr;
+    border-radius: 5rem;
+}
+.local iframe {
+    width: 90%;
+    border-radius: 2rem;
+}
+.local img{
+    width: 100%;
+    border-radius: 2rem;
+    max-width: 600px;
+}
+.direccion {
+    font-size: 1.8rem;
+}
+.aclaracion {
+    font-size: 1rem;
+}
+
+/*estilos pag.PRODUCTOS*/
+.titulo-promos-mensuales{
+    text-align: center;  
+    border-radius: 2rem; 
+}
+.promos{
+    display: flex;
+    flex-direction: column;
+    margin: 0% 2% 0% 2%;
+    padding: 1%;
+    font-size: 4rem;
+    text-align: center;
+    border: double red;
+    border-radius: 2rem;
+    background-image: linear-gradient(to top , yellow, orange, red);
+}
+.promo-lista {
+    list-style: none;
+ }
+.promo-lista li {
+    display: inline;
+ }
+.promo-lista li img{
+     width: 30%;
+ }
+.pizzas{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 2%;
+    padding: 1%;
+    font-size: 3rem;
+    text-align: center;
+    align-items: center;
+    }
+.pizzas img{
+    border-radius: 5rem;
+    border: solid;
+    width: 95%;
+}    
+.empanadas{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 2%;
+    padding: 1%;
+    font-size: 3rem;
+    text-align: center;
+    align-items: center;
+        }
+.empanadas img{
+    border-radius: 5rem;
+    border: solid;
+    width: 75%;
+}
+.minutas{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 2%;
+    padding: 1%;
+    font-size: 3rem;
+    text-align: center;
+    align-items: center;
+    }   
+.minutas img{
+    border-radius: 5rem;
+    border: solid;
+    width: 65%;
+}    
+.postres{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 2%;
+    padding: 1%;
+    font-size: 3rem;
+    text-align: center;
+    align-items: center;
+}
+.postres img{
+    border-radius: 5rem;
+    border: solid;
+    width: 75%;
+}    
+.bebidas{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 2%;
+    padding: 1%;
+    font-size: 3rem;
+    text-align: center;
+    align-items: center;
+}
+.bebidas img{
+    border-radius: 5rem;
+    border: solid;
+    width: 75%;
+}    
+.volver-arriba  {
+    margin: 2%;
+    text-align: center;
+    font-size: 1.7rem;
+    background-color: rgba(250, 1, 1, 0.6);
+}         
+
+/*estilos pag.CONTACTO*/
+.titulo-form-sorteo{
+    text-align: center;  
+    border-radius: 2rem;  
+}
+.form-sorteo input{
+    border-radius: 2rem;  
+}
+.form-contacto {
+    background-color: rgba(202, 12, 12,0.8);
+    text-align: center;
+    padding: 2%;
+    border-radius: 3rem;
+    width: 100%;
+}
+.encuesta-contacto {
+    background-color: rgba(247, 174, 38, 0.8);
+    text-align: center;
+    padding: 2%;
+    border-radius: 3rem;
+}
+textarea {
+    width: 100%;
+    align-items: center;
+}
+
+/*estilo pag.REDES*/
+.redes-main {
+    margin: 2px;
+    display: flex;
+}
+.redes-main div{
+    text-align: center;
+    background-color: rgba(253, 253, 253, 0.8);
+    border-radius: 5rem;
+    font-size: 1.5rem;
+}
+.redes-main h5{
+    font-size: 1.1rem ;
+    color: rgb(141, 7, 7);
+}
+
+/*estilo pag.HISTORIA*/
+#historia-narrativa{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100% 100% 100%;
+    grid-template-areas: 
+        "hn-h1 hn-h1"
+        "hn-img hn-img"
+        "hn-p hn-p" ;
+}
+.hn-hijo {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 1%;
+    row-gap: 1%;
+    margin: 1%;
+}
+.hn-hijo-h1{
+    color: black;
+    grid-area: hn-h1;
+    font-size: 0.8rem;
+    text-decoration: underline double red;
+    width: 100%;
+}
+.hn-hijo-img{
+    background-color: red;
+    grid-area: hn-img;
+    border-radius: 3rem;
+}
+#hn-imagen{
+    width: 100%;
+    border-radius: 3rem;
+}
+.hn-hijo-p {
+    grid-area: hn-p;
+    background-color: rgba(247, 174, 38, 0.8);
+    border-radius: 2rem;
+}
+#historia-actualidad{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 100% 100% 100%;
+    grid-template-areas: 
+        "ha-h2-1"
+        "ha-iframe"
+        "ha-h2-2" ;
+}
+.ha-hijo{
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 1%;
+    align-self: center;
+}
+.ha-hijo-h2-1{
+    grid-area: ha-h2-1;
+    font-size: 1.5rem;
+}
+.ha-hijo-iframe{
+    grid-area: ha-iframe;
+}
+#ha-iframe{
+    width: 100%;
+    border-radius: 3rem;
+    margin: 2rem; 
+}
+.ha-hijo-h2-1 #ha-h2-1{
+    width: 100%;
+    height: 100%;
+}
+.ha-hijo-h2-2 #ha-h2-2{
+    width: 100%;
+    height: 100%;
+}
+    /*ANIMACIONES pag.HISTORIA*/
+    .ha-hijo-h2-1:hover #ha-h2-1 {
+        animation-name: ha-h2-1;
+        animation-duration: 0.5s;
+        animation-iteration-count: 10;
+        animation-direction: alternate;
+    }
+    .ha-hijo-h2-2:hover #ha-h2-2 {
+        animation-name: ha-h2-2;
+        animation-duration: 0.5s;
+        animation-iteration-count: 10;
+        animation-direction: alternate;
+    }
+    /*keyframes pag.HISTORIA*/
+    @keyframes ha-h2-1 {
+        from {
+            transform: scale(0.7);
+        }
+        to {
+            transform: scale(1);
+        }
+    }
+    @keyframes ha-h2-2 {
+        from {
+            transform: scale(0.7);
+        }
+        to {
+            transform: scale(1) ;
+        }
+    }
+
+/*MEDIAS QUERIES*/
+@media screen and (max-width: 600px) {
+    /*header hasta 600px (menu hamburguesa)*/
+    .navegador {
+        display: none;
+    }
+    .banner {
+        display: flex;
+        flex-direction: column;
+    }
+    .banner .burguer {
+        text-align: center;
+        font-size: 42px;
+    }
+    .banner .slogan{ 
+        font-size: 200%;
+        text-align: center;
+    }
+    .banner .logo {
+      width: 15%;
+    }
+    #sidebar {
+         background-color: rgba(247, 174, 38, 0.8);
+         border-radius: 2rem;
+         position: fixed;
+         top: 0;
+         right: 0;
+         transform: translateX(100%);
+         transition: transform 2s;
+         z-index: 1000;
+    }
+    #sidebar:target{
+        display: block;
+        transform: translateX(-10%);
+    }
+    #sidebar.navegador{
+        height: 12rem;
+    }
+
+    /*footer hasta 600px*/
+    #footer{
+        background-color: orange;
+        border-radius: 3rem;
+        margin: 10px;
+        display: grid;
+        height: 850px;
+        width: 97%;
+        padding: 3%;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: 
+            "cf2"
+            "cf3"
+            "cf1"
+            ;
+    }
+    .cuadro-footer {
+        display: flex;    
+        padding: 3%;
+        font-family: 'Permanent Marker', cursive;
+        font-size: 1.5rem;
+        flex-flow: column wrap;
+        text-align: center;
+    }
+    .footer .logo {   
+         padding: 3px;
+         border-radius: 5rem;
+         border-style: double;   
+         }
+    .footer .cuadro-footer img {
+        padding: 5%;
+        width: 60%;
+        max-width: 150px;
+    }     
+    #footer-cf1{
+        grid-area: cf1;
+    }
+    #footer-cf1 p{
+        position: relative;
+        bottom: 250px;
+    }
+    #footer-cf1 a{
+        position: relative;
+        bottom: 20px;
+    }
+    #footer-cf2{
+        grid-area: cf2;
+    }
+    #cf-face{
+        position: relative;
+        bottom: 120px;
+        right: 60px;
+    }
+    #cf-insta{
+        position: relative;
+        top: 38px;
+        left: 60px;
+    }
+    #footer-cf3{
+        grid-area: cf3;
+    }
+    .cuadro-footer a{
+        text-align: center;
+        width: 100%;
+    }
+
+}
+
+@media screen and (min-width: 601px) {
+    /*estilo footer mayor a 600px*/
+    footer{
+        height: 200px;
+    }
+    .footer{
+        display: flex;
+        justify-content: space-around;
+        margin: 1px;
+        border-radius: 1rem;
+    }
+    .footer .cuadro-footer {
+        display: flex;    
+        padding: 3%;
+        width: 100%;
+        align-items: center;
+        font-family: 'Permanent Marker', cursive;
+        flex-flow: row nowrap;
+        overflow-x: visible;
+        overflow-y: visible;
+    }
+    .footer .cuadro-footer img {
+        padding: 5%;
+        width: 150%;
+        max-width: 100px;
+        min-width: 30px;
+    }
+    .footer .cuadro-footer p {
+        padding: 5%;
+        margin: 3%;
+    }
+    .footer .logo {   
+        position: relative;
+        top: 0;
+        left: 0;
+        margin-right: 5rem;
+        padding: 3rem;
+        border-radius: 3rem;
+        border-style: double;   
+    
+    }
+
+    /* no mostrar en mayor a 600px*/
+    .banner .burguer{
+        display: none;
+    }
+    .cerrar-menu {
+        display: none;
+    }
+
+    /*configuracion general de los section*/
+    section {
+        width: 97%;
+        padding: 3%;
+    }
+
+    /*ajustes varios para resolucion mayor a 600px*/
+    .slide{
+        font-size: 3rem;
+    }
+    .ha-hijo-h2-1{
+        font-size: 2.5rem;
+    }
+    .ha-hijo-h2-2{
+        font-size: 2.5rem;
+    }
+    .hn-hijo-h1{
+        font-size: 1.7rem;
+    }
+}
+
+/*otros ajustes varios con medias queries*/
+@media screen and (max-width: 767px)  {
+    /*ajuste seccion local hasta 767px*/
+    .local{
+        display: flex;
+        flex-flow: column nowrap;
+        width: 97%;
+        padding: 3%;
+        border-radius: 5rem;
+        }
+    .local .ubicacion{
+        width: 100%;
+        height: 1fr;
+        border-radius: 5rem;
+    }    
+    .local .direccion {
+        width: 100%;
+        height: 1fr;
+        border-radius: 5rem;
+    }
+    .local iframe {
+        width: 90%;
+        border-radius: 2rem;
+    }
+    .local img{
+        width: 100%;
+        border-radius: 2rem;
+
+    }
+}
+ 
+@media screen and (max-width: 430px)  {
+    #sidebar:target{
+    transform: translateX(-5%);
+    }
+    /*ajuste font-size varios para hasta 430px*/
+    .banner-titulo{
+        font-size: 3rem;
+    }
+    .promos{
+        font-size: 2rem;
+    }
+    .pizzas{
+        font-size: 2rem;
+    }
+    .empanadas{
+        font-size: 2rem;
+    }
+    .minutas{
+        font-size: 2rem;
+    }
+    .bebidas{
+        font-size: 2rem;
+    }
+    .postres{
+        font-size: 2rem;
+    }
+
+}
+/*ajustes para vistas muy pequeñas*/
+
+
+@media screen and (max-width: 330px)  {
+    #footer-cf1 a{
+        position: relative;
+        top: 50px;
+    }
+    .banner .slogan{ 
+        font-size: 150%;
+        text-align: center;
+    }
+}
+
+/*ajustes vistas grandes*/
+@media screen and (min-width: 1024px)  {
+    .banner-titulo{
+        font-size: 9rem;
+    }
+    #historia-narrativa{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 100% 100%;
+        grid-template-areas: 
+            "hn-h1 hn-h1"
+            "hn-img hn-p";
+            font-family: 'Permanent Marker', cursive;
+    }
+    .ha-hijo-h2-1{
+        font-size: 3.5rem;
+    }
+    .ha-hijo-h2-2{
+        font-size: 3.5rem;
+    }
+    .hn-hijo-h1{
+        font-size: 2.8rem;
+    }
+}
+/*ANIMACIONES VARIAS*/
+    /*animando nombre de la pag. en HEADER*/
+.banner-titulo {
+    animation-duration: 3s;
+    animation-name: move-titulo;
+    animation-iteration-count: 1;
+}
+@keyframes move-titulo{
+    0%{
+        rotate: 0deg;
+        scale: 0.2;
+    }
+    25%{
+        rotate: 720deg;
+        scale: 1;
+    }
+    50%{
+        rotate: 0deg;
+        scale: 0;
+    }
+    75%{
+        rotate: 180deg;
+        scale: 0.5;
+    }
+    100%{
+        scale: 1;
+    }
+}
+    /* animando el slogan en HEADER*/
+.slogan {
+    animation-duration: 8s;
+    animation-name: aparece-slogan;
+    animation-iteration-count: infinite;
+}
+@keyframes aparece-slogan {
+    0% {
+        opacity: 0.1;
+    }
+    10%{
+        opacity: 1;
+    }
+    60%{
+        opacity: 0.8;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+    /* animando promos en PRODUCTOS*/
+.promos img{
+    animation-duration: 2s;
+    animation-name: promos-giro;
+    animation-iteration-count: 1;
+}
+@keyframes promos-giro{
+    0%{
+        rotate: 0deg;
+        scale: 0.3;
+    }
+    100%{
+        rotate: 720deg;
+        scale: 1;
+    }
+}
+.promos img:hover {
+    scale: 2;
+}

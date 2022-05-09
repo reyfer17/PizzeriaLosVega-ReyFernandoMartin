@@ -1,0 +1,19 @@
+{
+  "name": "pizzerialosvega-reyfernandomartin",
+  "version": "1.0.0",
+  "description": " pizzeria los vega - rey fernando martin - proyecto para coderhouse",
+  "main": "index.js",
+  "scripts": {
+    "start": "sass style.scss ./css/estilo.css -w --no-source-map -s compressed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/reyfer17/PizzeriaLosVega-ReyFernandoMartin.git"
+  },
+  "author": "Rey Fernando Martin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/reyfer17/PizzeriaLosVega-ReyFernandoMartin/issues"
+  },
+  "homepage": "https://github.com/reyfer17/PizzeriaLosVega-ReyFernandoMartin#readme"
+}
