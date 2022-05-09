@@ -1,97 +1,76 @@
 /*estilo pag.HISTORIA*/
-#historia-narrativa{
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 100% 100% 100%;
-    grid-template-areas: 
-        "hn-h1 hn-h1"
-        "hn-img hn-img"
-        "hn-p hn-p" ;
-}
-.hn-hijo {
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    padding: 1%;
-    row-gap: 1%;
-    margin: 1%;
-}
-.hn-hijo-h1{
-    color: black;
-    grid-area: hn-h1;
-    font-size: 0.8rem;
-    text-decoration: underline double red;
-    width: 100%;
-}
-.hn-hijo-img{
-    background-color: red;
-    grid-area: hn-img;
-    border-radius: 3rem;
-}
-#hn-imagen{
-    width: 100%;
-    border-radius: 3rem;
-}
-.hn-hijo-p {
-    grid-area: hn-p;
-    background-color: rgba(247, 174, 38, 0.8);
-    border-radius: 2rem;
-}
-#historia-actualidad{
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 100% 100% 100%;
-    grid-template-areas: 
-        "ha-h2-1"
-        "ha-iframe"
-        "ha-h2-2" ;
-}
-.ha-hijo{
-    text-align: center;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    padding: 1%;
-    align-self: center;
-}
-.ha-hijo-h2-1{
-    grid-area: ha-h2-1;
-    font-size: 1.5rem;
-}
-.ha-hijo-iframe{
-    grid-area: ha-iframe;
-}
-#ha-iframe{
-    width: 100%;
-    border-radius: 3rem;
-    margin: 2rem; 
-}
-.ha-hijo-h2-1 #ha-h2-1{
-    width: 100%;
-    height: 100%;
-}
-.ha-hijo-h2-2 #ha-h2-2{
-    width: 100%;
-    height: 100%;
-}
-    /*ANIMACIONES pag.HISTORIA*/
-    .ha-hijo-h2-1:hover #ha-h2-1 {
-        animation-name: ha-h2-1;
-        animation-duration: 0.5s;
-        animation-iteration-count: 10;
-        animation-direction: alternate;
+.historia{
+    &_narrativa{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 100% 100% 100%;
+        grid-template-areas: 
+            "hn-h1 hn-h1"
+            "hn-img hn-img"
+            "hn-p hn-p" ;
+        &_hijo {
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            padding: 1%;
+            row-gap: 1%;
+            margin: 1%;
+            &_h1{
+                color: black;
+                grid-area: hn-h1;
+                font-size: 0.8rem;
+                text-decoration: underline double red;
+                width: 100%;
+            }
+            &_img{
+                background-color: red;
+                grid-area: hn-img;
+                border-radius: 3rem;
+            }
+            &_imagen{
+                width: 100%;
+                border-radius: 3rem;
+            }
+            &_p {
+                grid-area: hn-p;
+                background-color: rgba(247, 174, 38, 0.8);
+                border-radius: 2rem;
+            }
+        }    
     }
-    .ha-hijo-h2-2:hover #ha-h2-2 {
-        animation-name: ha-h2-2;
-        animation-duration: 0.5s;
-        animation-iteration-count: 10;
-        animation-direction: alternate;
+    &_actualidad{
+        &_marco{
+            &_hijo{
+                text-align: center;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+                align-self: center;
+                &_iframe{
+                    border-radius: 3rem;
+                    margin: 2rem; 
+                    width: 300px;
+                    height: 250px;
+                }
+                &_h2-1:hover .historia_actualidad_marco_hijo_mensaje-1 {
+                    animation-name: ha-h2-1;
+                    animation-duration: 0.5s;
+                    animation-iteration-count: 10;
+                    animation-direction: alternate;
+                }
+                &_h2-2:hover .historia_actualidad_marco_hijo_mensaje-2 {
+                    animation-name: ha-h2-2;
+                    animation-duration: 0.5s;
+                    animation-iteration-count: 10;
+                    animation-direction: alternate;
+                }
+            }
+        }    
     }
-    /*keyframes pag.HISTORIA*/
+}
     @keyframes ha-h2-1 {
         from {
             transform: scale(0.7);
@@ -110,33 +89,41 @@
     }
 
 @media screen and (min-width: 601px){
-    .ha-hijo-h2-1{
+    .historia_actualidad_marco_hijo_mensaje-1{
         font-size: 2.5rem;
     }
-    .ha-hijo-h2-2{
+    .historia_actualidad_marco_hijo_mensaje-2{
         font-size: 2.5rem;
     }
-    .hn-hijo-h1{
+    .historia_narrativa_hijo_titulo{
         font-size: 1.7rem;
     }
+    
 }
 @media screen and (min-width: 1024px){
-    #historia-narrativa{
+    .historia_narrativa{
         display: grid;
         grid-template-columns: 50% 50%;
         grid-template-rows: 100% 100%;
         grid-template-areas: 
             "hn-h1 hn-h1"
             "hn-img hn-p";
-            font-family: 'Permanent Marker', cursive;
+        &_hijo_h1{
+            font-size: 2.8rem;
+        }    
     }
-    .ha-hijo-h2-1{
+    .historia_actualidad_marco_hijo_mensaje-1{
         font-size: 3.5rem;
     }
-    .ha-hijo-h2-2{
+    .historia_actualidad_marco_hijo_mensaje-2{
         font-size: 3.5rem;
     }
-    .hn-hijo-h1{
-        font-size: 2.8rem;
+}
+@media screen and (min-width: 1200px){
+    .historia_actualidad_marco_hijo_iframe{
+        border-radius: 3rem;
+        margin: 2rem; 
+        width: 500px;
+        height: 400px;
     }
 }

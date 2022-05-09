@@ -1,7 +1,9 @@
 /*estilos pag.PRODUCTOS*/
-.titulo-promos-mensuales{
+.promos-mensuales{
+    &_titulo{
     text-align: center;  
     border-radius: 2rem; 
+    }
 }
 .promos{
     display: flex;
@@ -13,16 +15,16 @@
     border: double red;
     border-radius: 2rem;
     background-image: linear-gradient(to top , yellow, orange, red);
+    &_lista {
+        list-style: none;
+        li {
+            display: inline;
+            img{
+                width: 30%;
+            }
+        }
+     }
 }
-.promo-lista {
-    list-style: none;
- }
-.promo-lista li {
-    display: inline;
- }
-.promo-lista li img{
-     width: 30%;
- }
 .pizzas{
     display: flex;
     flex-direction: column;
@@ -32,12 +34,12 @@
     font-size: 3rem;
     text-align: center;
     align-items: center;
-    }
-.pizzas img{
-    border-radius: 5rem;
-    border: solid;
-    width: 95%;
-}    
+    img{
+        border-radius: 5rem;
+        border: solid;
+        width: 95%;
+    } 
+}
 .empanadas{
     display: flex;
     flex-direction: column;
@@ -47,11 +49,11 @@
     font-size: 3rem;
     text-align: center;
     align-items: center;
-        }
-.empanadas img{
-    border-radius: 5rem;
-    border: solid;
-    width: 75%;
+    img{
+        border-radius: 5rem;
+        border: solid;
+        width: 75%;
+    }
 }
 .minutas{
     display: flex;
@@ -62,12 +64,12 @@
     font-size: 3rem;
     text-align: center;
     align-items: center;
+    img{
+        border-radius: 5rem;
+        border: solid;
+        width: 65%;
     }   
-.minutas img{
-    border-radius: 5rem;
-    border: solid;
-    width: 65%;
-}    
+}   
 .postres{
     display: flex;
     flex-direction: column;
@@ -77,12 +79,12 @@
     font-size: 3rem;
     text-align: center;
     align-items: center;
-}
-.postres img{
-    border-radius: 5rem;
-    border: solid;
-    width: 75%;
-}    
+    img{
+        border-radius: 5rem;
+        border: solid;
+        width: 75%;
+    } 
+}  
 .bebidas{
     display: flex;
     flex-direction: column;
@@ -92,12 +94,12 @@
     font-size: 3rem;
     text-align: center;
     align-items: center;
+    img{
+        border-radius: 5rem;
+        border: solid;
+        width: 75%;
+    }  
 }
-.bebidas img{
-    border-radius: 5rem;
-    border: solid;
-    width: 75%;
-}    
 .volver-arriba  {
     margin: 2%;
     text-align: center;
