@@ -8,7 +8,7 @@
     margin: 0;
     box-sizing: border-box;
 }
-
+@import './componentes/variables';
 @import './componentes/header';
 @import './componentes/footer';
 @import './componentes/main_index';
@@ -16,6 +16,7 @@
 @import './componentes/main_contacto';
 @import './componentes/main_redes';
 @import './componentes/main_historia';
+
 
 /*estilo del main de todas las páginas*/
 main {

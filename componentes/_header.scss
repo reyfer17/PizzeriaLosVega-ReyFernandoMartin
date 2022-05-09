@@ -19,7 +19,7 @@
     &_titulo{
         text-align: center;
         font-family: 'Permanent Marker', cursive;  
-        color: red;
+        color: $colorTitulo;
         font-size: 5rem;
     }
     &_slogan { 
@@ -29,8 +29,6 @@
         font-family: 'Permanent Marker', cursive;   
     }
 }
-
-
 .navegador {  
     display: flex;
     color: rgba(3, 80, 61, 0.781);

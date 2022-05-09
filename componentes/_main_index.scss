@@ -31,7 +31,7 @@
         justify-content: space-around;
         border: solid;
         border-radius: 2rem;
-        background: linear-gradient(red,orange, yellow); 
+        background: $colorGradiente; 
         column-gap: 3%;
     }
     .muestreo .card{
@@ -176,7 +176,7 @@
         border-radius: 2rem;
         max-width: 600px;
     }
-    .direccion {
+    .direccionar {
         font-size: 1.8rem;
     }
     .aclaracion {
