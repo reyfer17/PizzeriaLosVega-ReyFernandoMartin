@@ -19,3 +19,41 @@ main {
         padding: 3%;
     }
 }
+
+/*muestro uso del extend en página-Productos*/
+.productoTemplate{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 2%;
+    padding: 1%;
+    font-size: 3rem;
+    text-align: center;
+    align-items: center;
+}
+/*muestro uso de mixin y condicionales en página-Redes, 
+no va a quedar así, solo muestro como funciona*/
+@mixin genericContainer($textAlign,$shadow){
+    text-align: $textAlign;
+    background-color: $colorRedes;
+    border-radius: 2rem;
+    font-size: 1.5rem;
+    margin-bottom: 3%;
+    align-items: center;
+    @if ($shadow =='yes') {
+        box-shadow: 0 30px 30px rgba(0, 0, 0, 0.5);
+    }
+}
+/*muestro uso de each y maps en página-Producto*/
+$rrss:(
+    redes-main__whatsapp: #12f16f,
+    redes-main__instagram: #c92d8f,
+    redes-main__facebook: #1019c5
+);
+
+@each $name, $color in $rrss {
+    .#{$name}{
+        color: $color;
+        font-size: medium;
+    }
+}

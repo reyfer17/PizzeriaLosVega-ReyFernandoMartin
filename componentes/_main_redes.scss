@@ -2,12 +2,15 @@
 .redes-main {
     margin: 2px;
     display: flex;
-    div{
-        text-align: center;
-        background-color: $colorRedes;
-        border-radius: 5rem;
-        font-size: 1.5rem;
-        margin-bottom: 3%;
+    /*muestro el uso del mixin con alineación de texto y sombreado de los contenedores*/
+    &__facebook{
+        @include genericContainer (right,'yes');      
+    }
+    &__instagram{
+        @include genericContainer (center,'');      
+    }
+    &__whatsapp{
+        @include genericContainer (left,'yes');      
     }
     h5{
         font-size: 1.1rem ;

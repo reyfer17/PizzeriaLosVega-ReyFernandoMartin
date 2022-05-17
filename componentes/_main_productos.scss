@@ -26,14 +26,7 @@
      }
 }
 .pizzas{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    margin: 2%;
-    padding: 1%;
-    font-size: 3rem;
-    text-align: center;
-    align-items: center;
+    @extend .productoTemplate;
     img{
         border-radius: 5rem;
         border: solid;
@@ -41,14 +34,7 @@
     } 
 }
 .empanadas{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    margin: 2%;
-    padding: 1%;
-    font-size: 3rem;
-    text-align: center;
-    align-items: center;
+    @extend .productoTemplate;
     img{
         border-radius: 5rem;
         border: solid;
@@ -56,14 +42,7 @@
     }
 }
 .minutas{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    margin: 2%;
-    padding: 1%;
-    font-size: 3rem;
-    text-align: center;
-    align-items: center;
+    @extend .productoTemplate;
     img{
         border-radius: 5rem;
         border: solid;
@@ -71,14 +50,7 @@
     }   
 }   
 .postres{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    margin: 2%;
-    padding: 1%;
-    font-size: 3rem;
-    text-align: center;
-    align-items: center;
+    @extend .productoTemplate;
     img{
         border-radius: 5rem;
         border: solid;
@@ -86,14 +58,7 @@
     } 
 }  
 .bebidas{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    margin: 2%;
-    padding: 1%;
-    font-size: 3rem;
-    text-align: center;
-    align-items: center;
+    @extend .productoTemplate;
     img{
         border-radius: 5rem;
         border: solid;
