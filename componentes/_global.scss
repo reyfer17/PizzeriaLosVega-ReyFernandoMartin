@@ -1,0 +1,21 @@
+/*reseteo*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*estilo del main de todas las páginas*/
+main {
+    background-image: url(../images/fondo-productos.jpg);
+    font-family: 'Permanent Marker', cursive; 
+}
+
+/*MEDIAS QUERIES*/
+@media screen and (min-width: 601px) {
+    /*configuracion general de los section*/
+    section {
+        width: 97%;
+        padding: 3%;
+    }
+}
