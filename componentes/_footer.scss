@@ -2,8 +2,8 @@
 .footer {
     background-image: linear-gradient(45deg , yellow, orange, red);
 }
-@media screen and (max-width: 600px) {
-    /*footer hasta 600px*/
+@media screen and (max-width: 700px) {
+    /*footer hasta 700px*/
     .footer{
         border-radius: 3rem;
         margin: 5px;
@@ -81,8 +81,8 @@
     }
 }
 
-@media screen and (min-width: 601px){
-    /*estilo footer mayor a 600px*/
+@media screen and (min-width: 701px){
+    /*estilo footer mayor a 700px*/
     footer{
         height: 200px;
     }

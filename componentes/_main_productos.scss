@@ -1,6 +1,6 @@
 /*estilos pag.PRODUCTOS*/
-.promos-mensuales{
-    &_titulo{
+.leyenda{
+    &__texto{
     text-align: center;  
     border-radius: 2rem; 
     }
@@ -42,22 +42,6 @@
         width: 75%;
     }
 }
-.minutas{
-    @extend .productoTemplate;
-    img{
-        border-radius: 5rem;
-        border: solid;
-        width: 65%;
-    }   
-}   
-.postres{
-    @extend .productoTemplate;
-    img{
-        border-radius: 5rem;
-        border: solid;
-        width: 75%;
-    } 
-}  
 .bebidas{
     @extend .productoTemplate;
     img{
@@ -82,13 +66,7 @@
     .empanadas{
         font-size: 2rem;
     }
-    .minutas{
-        font-size: 2rem;
-    }
     .bebidas{
-        font-size: 2rem;
-    }
-    .postres{
         font-size: 2rem;
     }
 }
