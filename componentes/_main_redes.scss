@@ -2,15 +2,14 @@
 .redes-main {
     margin: 2px;
     display: flex;
-    /*muestro el uso del mixin con alineación de texto y sombreado de los contenedores*/
     &__facebook{
-        @include genericContainer (right,'yes');      
+        @include genericContainer (center,'yes');      
     }
     &__instagram{
-        @include genericContainer (center,'');      
+        @include genericContainer (center,'yes');      
     }
     &__whatsapp{
-        @include genericContainer (left,'yes');      
+        @include genericContainer (center,'yes');      
     }
     h5{
         font-size: 1.1rem ;
