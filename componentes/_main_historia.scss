@@ -170,10 +170,7 @@
             font-size: 2.8rem;
         }    
     }
-    .historia_actualidad_marco_hijo_mensaje-1{
-        font-size: 3.5rem;
-    }
-    .historia_actualidad_marco_hijo_mensaje-2{
+    .historia_actualidad_marco_hijo h2{
         font-size: 3.5rem;
     }
 }
@@ -183,5 +180,10 @@
         margin: 2rem; 
         width: 500px;
         height: 400px;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 991px){
+    .historia_actualidad_marco_hijo h2{
+        font-size: 2rem;
     }
 }
