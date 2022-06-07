@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 </head>
 <body>
-    <header class="banner">
+    <header class="banner" id="banner-ancla">
         <a href="../index.html"> <img class="logo" src="../images/logo-losvega11.png" alt="logo de Los Vega" ></a>
         <h1 class="banner_titulo">LOS VEGA</h1>
         <h2 class="banner_slogan">la pizza del barrio!</h2>
@@ -36,10 +36,9 @@
         </nav>       
     </header>
 
-    <main>
-        <!--la seccion promos entraría luego en más detalle cuando agregue un desplegable, por ahora está simplificada para que simplifique las distintas opciones-->
-        <section id="promos-top" class="promos">
-            <a name="promos"></a><h3 class="promo-titulo">PROMOS</h3>
+    <main class="main-productos">
+        <section class="promos">
+            <a name="promos-ancla"></a><h3 class="promo-titulo">PROMOS</h3>
             <ol class="promos_lista">
                 <li><img id="promo1" src="../images/promo1-productos-promos.png" alt="precio promo1"></li>
                 <li><img id="promo2" src="../images/promo2-productos-promos.png" alt="precio promo2"></li>
@@ -261,8 +260,7 @@
             </table>
         </div>
         <br>
-        <!--botón de regreso a la parte superior-->
-        <a href="#promos-top" > <p class="volver-arriba">volver arriba</p> </a>
+        <a href="#banner-ancla" > <p class="volver-arriba">volver arriba</p> </a>
     </main>
 
     <footer class="footer"> 
