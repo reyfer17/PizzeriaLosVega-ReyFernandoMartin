@@ -36,7 +36,6 @@
     </header>
 
     <main class="main-index">
-        <!--section MUESTREO - un pantallazo de los productos, para saber rápidamente de que negocio se trata y acceder a PRODUCTOS-->
         <section class="container " >
             <div class="muestreo row p-3">
                 <div class="li-empanadas card card-image-bottom col-12 col-md-3">
@@ -61,13 +60,49 @@
             </div>
         </section>
 
-        <section class="slide">
+        <!--<section class="slide">
             <h2> <a href="pages/productos.html#promos-ancla">NUESTRAS PROMOS</a> </h2>
             <img src="images/promo-main.png" alt="imagen promos"> 
             <p> <a href="pages/productos.html">***Lista de Precios***</a> </p>
-        </section>
+        </section>-->
 
-        <!--en este section visualizamos todo lo referente a ubicación, para que el cliente tenga una referencia rápida de donde está ubicado el local y como llegar-->
+        <div class="slide">
+			<div class="slide-inner container">
+				<input class="slide-open" type="radio" id="slide-1" 
+			 	     name="slide" aria-hidden="true" hidden="" checked="checked">
+				<div class="slide-item">
+					<img src="./images/promo1-main.png">
+				</div>
+				<input class="slide-open" type="radio" id="slide-2" 
+			 	     name="slide" aria-hidden="true" hidden="">
+				<div class="slide-item">
+					<img src="./images/promo2-main.png">
+				</div>
+				<input class="slide-open" type="radio" id="slide-3" 
+			 	     name="slide" aria-hidden="true" hidden="">
+				<div class="slide-item">
+					<img src="./images/promo3-main.png">
+				</div>
+				<label for="slide-3" class="slide-control prev control-1">‹</label>
+				<label for="slide-2" class="slide-control next control-1">›</label>
+				<label for="slide-1" class="slide-control prev control-2">‹</label>
+				<label for="slide-3" class="slide-control next control-2">›</label>
+				<label for="slide-2" class="slide-control prev control-3">‹</label>
+				<label for="slide-1" class="slide-control next control-3">›</label>
+				<ol class="slide-indicador">
+					<li>
+						<label for="slide-1" class="slide-circulo">•</label>
+					</li>
+					<li>
+						<label for="slide-2" class="slide-circulo">•</label>
+					</li>
+					<li>
+						<label for="slide-3" class="slide-circulo">•</label>
+					</li>
+				</ol>
+			</div>
+		</div>
+
         <section class="local">
             <div class="ubicacion">
                 <p>Ubicación:</p>
@@ -81,10 +116,9 @@
                     <dd class="direccionar">Arenales 1096, esquina Medrano, Banfield</dd>
                     <dd class="aclaracion">(a una cuadra de la cancha de Banfield)</dd>
                 </dl>
-                <img src="images/foto-angulo.jpg" alt="imagen del local por fuera" width="500">
+                <img src="./images/foto-angulo.jpg" alt="imagen del local por fuera">
             </div>
         </section>
-         <!--Seccion agregada para implementar bootstrap, LAS MAS VENDIDAS-->
          <section class="main-lasmas container">
             <div class="row">
                 <h4 class="titulo-lasmas display-4">Las pizzas más pedidas del mes</h4>
