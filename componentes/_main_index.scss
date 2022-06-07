@@ -39,6 +39,8 @@
         border-radius: 3rem;
         margin-bottom: 2%;
     }
+
+    
         /*EFECTOS LINKS muestreo*/
         .muestreo .card:link {
             color: red;
@@ -217,3 +219,9 @@
         border-radius: 2rem;
     }
 } 
+
+@media screen and (min-width: 768px) and (max-width: 991px){
+    .muestreo .card-title {
+        font-size: 1.1rem ;
+    }
+}
