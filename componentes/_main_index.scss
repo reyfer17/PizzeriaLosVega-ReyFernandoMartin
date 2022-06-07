@@ -84,7 +84,7 @@
         }   
     
     /*-seccion slide - Index */
- /*   .slide {
+ /*  .slide {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 10% 80% 10%;
@@ -99,26 +99,29 @@
         padding: 1rem 0rem 1rem 0rem;
         gap: 1rem;
         margin-bottom: 1rem;
-    }
+    }*/
     .slide h2{
+        text-align: center;
         width: 100%;
-        grid-area: slidetit;
+       /* grid-area: slidetit;*/
     }
-    .slide img{
+   /*  .slide img{
         grid-area: slideslide;
         border-radius: 10%;
         image-rendering: optimizeQuality;
         padding: 0 2% 0 2%;
         width: 100%;
-    }
-    .slide p{
-        grid-area: slidelistap;
-        background-color: rgba(202, 12, 12,0.8);
-        border-radius: rem;
-        width: 100%;
     }*/
+    .slide p{
+        text-align: center;
+        /*  grid-area: slidelistap;*/
+        margin-top: 5px;
+        background-color: rgba(202, 12, 12,0.8);
+        border-radius: 1rem;
+        width: 100%;
+    }
         /*EFECTOS LINK slide - Index*/
-     /*   .slide a:link{
+        .slide a:link{
             color: black;
         }
         .slide a:visited {
@@ -133,7 +136,7 @@
                 background: red;
                 color: yellow;
                 border-radius: 1rem;
-        }*/
+        }
         
     /*seccion local - Index*/    
     .local   {
@@ -185,11 +188,11 @@
         font-size: 1rem;
     }
 
-/*@media screen and (min-width: 601px){
-    .slide{
+@media screen and (min-width: 601px){
+    .slide h2, .slide p{
         font-size: 3rem;
     }
-}*/   
+}  
 /*otros ajustes varios con medias queries*/
 @media screen and (max-width: 767px)  {
     /*ajuste seccion local hasta 767px*/
@@ -229,7 +232,6 @@
 .slide {
     border-radius: 2rem;
     position: relative;
-    box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.64);
     margin-top: 26px;
 }
 
@@ -262,7 +264,6 @@
     background: rgba(0, 0, 0, 0.28);
     border-radius: 50%;
     color: #fff;
-    cursor: pointer;
     display: none;
     font-size: 40px;
     height: 40px;
@@ -287,8 +288,8 @@
 }
 
 .slide-control:hover {
-    background: rgba(0, 0, 0, 0.8);
-    color: #aaaaaa;
+    background: rgba(252, 234, 31, 0.8);
+    color: #f50707;
 }
 
 #slide-1:checked ~ .control-1,
@@ -300,8 +301,6 @@
 .slide-indicador {
     align-items: center;
     list-style: none;
-    margin: 0;
-    padding: 0;
     position: absolute;
     bottom: 2%;
     left: 0;
@@ -332,6 +331,6 @@
       li:nth-child(2) .slide-circulo,
 #slide-3:checked ~ .control-3 ~ .slide-indicador 
       li:nth-child(3) .slide-circulo {
-    color: #428bca;
+    color: #3ef26e;
 }
 
