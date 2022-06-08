@@ -20,7 +20,6 @@ main {
     }
 }
 
-/*muestro uso del extend en página-Productos*/
 .productoTemplate{
     display: flex;
     flex-direction: column;
@@ -31,8 +30,7 @@ main {
     text-align: center;
     align-items: center;
 }
-/*muestro uso de mixin y condicionales en página-Redes, 
-no va a quedar así, solo muestro como funciona*/
+
 @mixin genericContainer($textAlign,$shadow){
     text-align: $textAlign;
     background-color: $colorRedes;
@@ -44,13 +42,12 @@ no va a quedar así, solo muestro como funciona*/
         box-shadow: 0 30px 30px rgba(0, 0, 0, 0.5);
     }
 }
-/*muestro uso de each y maps en página-Producto*/
+
 $rrss:(
     redes-main__whatsapp: #12f16f,
     redes-main__instagram: #c92d8f,
     redes-main__facebook: #1019c5
 );
-
 @each $name, $color in $rrss {
     .#{$name}{
         color: $color;
