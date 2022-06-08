@@ -90,20 +90,18 @@
 }
 @keyframes promos-giro{
     0%{
-        rotate: 0deg;
-        scale: 0.3;
+        transform:rotate(0deg) scale(0.3);
     }
     100%{
-        rotate: 720deg;
-        scale: 1;
+        transform:rotate(720deg) scale(1);
     }
 }
 .promos img:hover {
-    scale: 1.5;
+    transform: scale(1.5);
 }
 @media screen and (min-width: 1225px){
     .promos img:hover {
-        scale: 1.2;
+        transform: scale(1.2);
     }  
 }
 @media screen and (min-width: 600px){

@@ -2,12 +2,12 @@
 .historia{
     &_narrativa{
         display: grid;
-        grid-template-columns: 50% 50%;
+        grid-template-columns: 100%;
         grid-template-rows: 100% 100% 100%;
         grid-template-areas: 
-            "hn-h1 hn-h1"
-            "hn-img hn-img"
-            "hn-p hn-p" ;
+            "hn-h1"
+            "hn-img"
+            "hn-p" ;
         &_hijo {
             text-align: center;
             display: flex;
@@ -18,15 +18,15 @@
             row-gap: 1%;
             margin: 1%;
             &_h1{
-                color: black;
                 grid-area: hn-h1;
+                color: black;
                 font-size: 0.8rem;
                 text-decoration: underline double red;
                 width: 100%;
             }
             &_img{
-                background-color: red;
                 grid-area: hn-img;
+                background-color: red;            
                 border-radius: 3rem;
             }
             &_imagen{
@@ -42,12 +42,13 @@
     }
     &_narrativa2{
         display: grid;
-        grid-template-columns: 50% 50%;
+        grid-template-columns: 100%;
         grid-template-rows: 100% 100% 100%;
         grid-template-areas: 
-            "hn2-h1 hn2-h1"
-            "hn2-img1 hn2-img1"
-            "hn2-img2 hn2-img2" ;
+            "hn2-h1"
+            "hn2-img1"
+            "hn2-img2" ;
+            
         &_hijo {
             text-align: center;
             display: flex;
